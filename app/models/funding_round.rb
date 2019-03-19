@@ -3,8 +3,7 @@
 
 class FundingRound
 
-  attr_reader :startup, :venture_capitalist
-  attr_accessor :type, :amount_investment
+  attr_reader :startup, :venture_capitalist, :type, :amount_investment
 
   @@all = []
 
@@ -12,7 +11,7 @@ class FundingRound
     @startup = startup
     @venture_capitalist = venture_capitalist
     @type = type
-    @amount_investment = amount_investment
+    @amount_investment = amount_investment > 0 ? amount_investment : 0
 
     @@all << self
 

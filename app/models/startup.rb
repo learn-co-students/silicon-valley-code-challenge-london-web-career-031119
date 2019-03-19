@@ -20,13 +20,13 @@ class Startup
     # pblm: how to change the domain name since we have a reader (and we cannot change to accessor)
     #startup1.pivot(new_domain, new_name) =>
     # startup1 => object new_name, Jo, new_domain
-    self.name = new_name
-    self.domain = new_domain
+    @name = new_name
+    @domain = new_domain
     self
 
   end
 
-  def find_by_founder(founder_name)
+  def self.find_by_founder(founder_name)
     Startup.all.find { |startup| startup.founder == founder_name }
   end
 
@@ -55,12 +55,12 @@ class Startup
 
   def total_funds
     # Returns the total sum of investments that the startup has gotten
-    startups_fundings.collect {|funding| funding.amount_investment}.sum
+    startups_fundings.collect {&:amount_investment}.sum
   end
 
   def investors
     # Returns a **unique** array of all the venture capitalists that have invested in this company
-    startups_fundings.collect { |funding| funding.venture_capitalist}.uniq
+    startups_fundings.collect { &:venture_capitalist}.uniq
   end
 
   def big_investors

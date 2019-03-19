@@ -19,7 +19,7 @@ class VentureCapitalist
   end
 
   def self.tres_commas_club
-    VentureCapitalist.all.select { |i| i.total_worth > 1000000000 }
+    VentureCapitalist.all.select { |i| i.total_worth > 1_000_000_000 }
   end
 
   def offer_contract(startup, type, amount_investment)
@@ -32,12 +32,12 @@ class VentureCapitalist
 
   def portfolio
     # Returns a **unique** list of all startups this venture capitalist has funded
-    funding_rounds.collect { |i| i.startup}.uniq
+    funding_rounds.collect {&:startup}.uniq
   end
 
   def biggest_investment
     # returns the largest funding round given by this venture capitalist
-    funding_rounds.collect {|i| i.amount_investment}.max
+    funding_rounds.collect {&:amount_investment}.max
   end
 
   def invested(domain_name)
