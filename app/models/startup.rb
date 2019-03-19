@@ -25,7 +25,7 @@ class Startup
   end
 
   def self.domains
-    self.all.map {|s| s.domain}
+    self.all.map {|s| s.domain}.uniq
   end
 
   def sign_contract(venture_capitalist, type, investment)

@@ -14,9 +14,9 @@ s1 = Startup.new("Startup 1", "Founder 1", "Domain 1")
 s2 = Startup.new("Startup 2", "Founder 2", "Domain 2")
 s3 = Startup.new("Startup 3", "Founder 3", "Domain 3")
 
-vc1 = VentureCapitalist.new("VC1")
-vc2 = VentureCapitalist.new("VC2")
-vc3 = VentureCapitalist.new("VC3")
+vc1 = VentureCapitalist.new("VC1", 500000000)
+vc2 = VentureCapitalist.new("VC2", 2000000000)
+vc3 = VentureCapitalist.new("VC3", 3000000000)
 
 fr1 = FundingRound.new(s1, vc1, "Angel", 500)
 fr2 = FundingRound.new(s1, vc2, "Angel", 1000)

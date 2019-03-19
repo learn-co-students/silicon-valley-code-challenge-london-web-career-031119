@@ -1,10 +1,11 @@
 class VentureCapitalist
-  attr_accessor :name,  :type, :investment, :startup
+  attr_accessor :name,  :type, :investment, :startup, :total_worth
 
   @@all = []
 
-  def initialize(name)
+  def initialize(name, worth)
     @name = name
+    @total_worth = worth
     self.class.all << self
   end
 
@@ -12,16 +13,12 @@ class VentureCapitalist
     FundingRound.all.select {|fr| fr.venture_capitalist == self}
   end
 
-  def total_worth
-    all_investments.inject(0) {|sum,x| sum + x.investment}
-  end
-
   def self.all
     @@all
   end
 
   def self.tres_commas_club
-    self.all.select {|vc| vc.total_worth > 2500}
+    self.all.select {|vc| vc.total_worth > 1_000_000_000 }
   end
 
   def offer_contract(startup, type, investment)
@@ -43,5 +40,5 @@ class VentureCapitalist
   def invested(domain_str)
     funding_rounds.inject(0) {|sum,x| x.startup.domain == domain_str ? sum + x.investment : sum}
   end
-  
+
 end
