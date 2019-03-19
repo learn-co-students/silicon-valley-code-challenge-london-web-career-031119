@@ -1,6 +1,6 @@
 class Startup
-  attr_accessor :name, :domain
-  attr_reader :founder
+  attr_accessor :name
+  attr_reader :founder, :domain
 
   @@all = []
 
