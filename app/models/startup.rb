@@ -27,7 +27,7 @@ class Startup
   end
 
   def find_by_founder(founder_name)
-    Startup.all.find { |name| name.founder == founder_name }
+    Startup.all.find { |startup| startup.founder == founder_name }
   end
 
   def self.domains
@@ -49,25 +49,24 @@ class Startup
 
   end
 
-  def select_startup
+  def startups_fundings
     FundingRound.all.select { |i| i.startup == self }
   end
 
   def total_funds
     # Returns the total sum of investments that the startup has gotten
-    select_startup.collect {|i| i.amount_investment}.sum
-
+    startups_fundings.collect {|funding| funding.amount_investment}.sum
   end
 
   def investors
     # Returns a **unique** array of all the venture capitalists that have invested in this company
-    select_startup.collect { |i| i.venture_capitalist}.uniq
+    startups_fundings.collect { |funding| funding.venture_capitalist}.uniq
   end
 
   def big_investors
     # Returns a **unique** array of all the venture capitalists that
     # have invested in this company and are in the Trés Commas club
-    my_big_investors = (investors && VentureCapitalist.tres_commas_club).uniq
+    investors & VentureCapitalist.tres_commas_club
   end
 
 

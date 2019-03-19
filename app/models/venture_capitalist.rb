@@ -26,27 +26,23 @@ class VentureCapitalist
     FundingRound.new(startup, self, type, amount_investment)
   end
 
-  def select_vc
-    FundingRound.all.select {|i| i.venture_capitalist == self}
-  end
-
   def funding_rounds
-    select_vc.select { |i| i.type}.length
+    FundingRound.select { |i| i.venture_capitalist == self}
   end
 
   def portfolio
     # Returns a **unique** list of all startups this venture capitalist has funded
-    select_vc.collect { |i| i.startup}
+    funding_rounds.collect { |i| i.startup}.uniq
   end
 
   def biggest_investment
     # returns the largest funding round given by this venture capitalist
-    select_vc.collect {|i| i.amount_investment}.max
+    funding_rounds.collect {|i| i.amount_investment}.max
   end
 
   def invested(domain_name)
    # given a **domain string**, returns the total amount invested in that domain
-   my_investment = select_vc.select { |i| i.startup.domain == domain_name }
+   my_investment = funding_rounds.select { |i| i.startup.domain == domain_name }
 
    my_investment.collect { |i| i.venture_capitalist.total_worth}.sum
   end

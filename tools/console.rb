@@ -12,7 +12,9 @@ startup4 = Startup.new('easygreen', 'Gul', 'Green-tech')
 vc1 = VentureCapitalist.new('ohMyMonney', 2000000000)
 vc2 = VentureCapitalist.new('sweetWomen', 1000000000)
 vc3 = VentureCapitalist.new('bigAssVc', 33000000000)
-vc4 = VentureCapitalist.new('littlegem', 500000000)
+vc4 = VentureCapitalist.new('littlegem', 22500000000)
+vc5 = VentureCapitalist.new('verycool', 2200500000000)
+
 
 fg1 = FundingRound.new(startup1, vc1, 'Pre-seed', 4000000)
 fg2 = FundingRound.new(startup2, vc3, 'Angel', 23000)
@@ -21,9 +23,12 @@ fg4 = FundingRound.new(startup4, vc2, 'Series B', 400000)
 fg5 = FundingRound.new(startup1, vc2, 'Series A', 300000)
 fg6 = FundingRound.new(startup3, vc1, 'Series B', 400000)
 fg7 = FundingRound.new(startup2, vc2, 'Series A', 400000)
-fg8 = FundingRound.new(startup1, vc3, 'Series B', 45000)
+fg8 = FundingRound.new(startup1, vc4, 'Series B', 111145000)
 fg9 = FundingRound.new(startup1, vc3, 'Series C', 45000)
 fg10 = FundingRound.new(startup4, vc1, 'Pre-seed', 2345000000)
+fg11 = FundingRound.new(startup3, vc3, 'Pre-seed', 2345000000)
+
+
 
 
 
