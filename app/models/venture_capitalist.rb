@@ -33,6 +33,7 @@ class VentureCapitalist
 
   def biggest_investment
     funding_rounds.sort{ |a, b| b.investment <=> a.investment }.first
+    # .max_by{ |i| i.investment }
   end
 
   def invested(domain_String)

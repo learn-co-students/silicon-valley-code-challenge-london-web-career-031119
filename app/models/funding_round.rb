@@ -9,6 +9,7 @@ class FundingRound
     @startup = startup_Object
     @venture_capitalist = vc_Object
     @type = type_String
+    # @investment = investment_Float >= 0 ? investment_Float : 0 
     if investment_Float >= 0
       @investment = investment_Float
     else
