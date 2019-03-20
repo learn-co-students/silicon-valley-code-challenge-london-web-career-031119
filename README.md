@@ -27,21 +27,21 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Build the following methods on the `Startup` class
 
-- `Startup#name`
+- `Startup#name DONE-----`
   - returns a **string** that is the startup's name
-- `Startup#founder`
+- `Startup#founder DONE-------`
   - returns a **string** that is the founder's name
   - Once a startup is created, the founder cannot be changed.
-- `Startup#domain`
+- `Startup#domain DONE-------`
   - returns a **string** that is the startup's domain
   - Once a startup is created, the domain cannot be changed.
-- `Startup#pivot`
+- `Startup#pivot `
   - given a string of a **domain** and a string of a **name**, change the domain and name of the startup
-- `Startup.all`
+- `Startup.all DONE -----`
   - should return **all** of the startup instances
-- `Startup.find_by_founder`
+- `Startup.find_by_founder --- DONE`
   - given a string of a **founder's name**, returns the **first startup** whose founder's name matches
-- `Startup.domains`
+- `Startup.domains --- DONE`
   - should return an **array** of all of the different startup domains
 
 ---
