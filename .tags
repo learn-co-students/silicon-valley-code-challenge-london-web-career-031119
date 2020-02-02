@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Learn.co Educational Content License	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/LICENSE.md	/^#Learn.co Educational Content License$/;"	function	line:1
+reload	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/tools/console.rb	/^def reload$/;"	method	line:3
+VentureCapitalist	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/app/models/venture_capitalist.rb	/^class VentureCapitalist$/;"	class	line:1
+FundingRound	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/app/models/funding_round.rb	/^class FundingRound$/;"	class	line:1
+Startup	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/app/models/startup.rb	/^class Startup$/;"	class	line:1
+Object Relations Code Challenge	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^# Object Relations Code Challenge$/;"	function	line:1
+Topics	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^## Topics$/;"	function	line:8
+Notes	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^## Notes$/;"	function	line:16
+Deliverables	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^## Deliverables$/;"	function	line:24
+Basic Class Methods and Properties	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^### Basic Class Methods and Properties$/;"	function	line:26
+Build the following methods on the `Startup` class	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^#### Build the following methods on the `Startup` class$/;"	function	line:28
+Build out the following methods on the `VentureCapitalist` class	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^#### Build out the following methods on the `VentureCapitalist` class$/;"	function	line:49
+Build out the following methods on the `FundingRound` class	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^#### Build out the following methods on the `FundingRound` class$/;"	function	line:62
+Associations and Aggregate Methods	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^### Associations and Aggregate Methods$/;"	function	line:81
+Startup	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^#### Startup$/;"	function	line:83
+VentureCapitalist	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/README.md	/^#### VentureCapitalist$/;"	function	line:96
+Contributing to Learn.co Curriculum	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/CONTRIBUTING.md	/^# Contributing to Learn.co Curriculum$/;"	function	line:1
+Raising an Issue to Encourage a Contribution	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/CONTRIBUTING.md	/^## Raising an Issue to Encourage a Contribution$/;"	function	line:5
+Submitting a Pull Request to Suggest an Improvement	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/CONTRIBUTING.md	/^## Submitting a Pull Request to Suggest an Improvement$/;"	function	line:13
+Why Contribute?	/Users/manon/Development/code/silicon-valley-code-challenge-london-web-career-031119/CONTRIBUTING.md	/^# Why Contribute?$/;"	function	line:25
